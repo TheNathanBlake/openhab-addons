@@ -4,15 +4,15 @@
 	xmlns:thing="https://openhab.org/schemas/thing-description/v1.0.0"
 	xsi:schemaLocation="https://openhab.org/schemas/thing-description/v1.0.0 https://openhab.org/schemas/thing-description-1.0.0.xsd">
 
-	<!-- HS200 THING-TYPE (ON/OFF SWITCH) -->
-	<thing-type id="HS200">
+	<!-- HS220 THING-TYPE (DIMMABLE SWITCH) -->
+	<thing-type id="HS220">
 		<supported-bridge-type-refs>
 			<bridge-type-ref id="bridge"/>
 		</supported-bridge-type-refs>
 
-		<label>HS200 Series Switch</label>
-		<description>Tapo Smart Switch</description>
-		<semantic-equipment-tag>Lightbulb</semantic-equipment-tag>
+		<label>HS220 Dimmable Switch</label>
+		<description>Tapo Smart Dimmable Switch</description>
+		<semantic-equipment-tag>ControlDevice</semantic-equipment-tag>
 		<channel-groups>
 			<channel-group id="actuator" typeId="switch"/>
 			<channel-group id="device" typeId="deviceState"/>

@@ -136,7 +136,8 @@ public class TapoUtils {
             deviceModel = deviceModel.replace("Series", "");
             deviceModel = deviceModel.trim();
             deviceModel = deviceModel.replace(" ", "_");
-            deviceModel = deviceModel.substring(0, 4);
+            // TODO determine how best to resolve both legacy and future model ID's
+            // deviceModel = deviceModel.substring(0, 4);
             return deviceModel;
         } catch (Exception e) {
             return "";
